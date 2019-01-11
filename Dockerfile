@@ -9,7 +9,7 @@ WORKDIR /app
 
 RUN apt install -y python3-pip
 RUN pip3 install setuptools
-RUN python3 setup.py install
+RUN pip3 install .
 
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
